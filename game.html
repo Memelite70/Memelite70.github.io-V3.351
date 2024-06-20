@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gameframe - Geometry Tryhard</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
+     crossorigin="anonymous"></script>
+</head>
+<body onload="load()">
+
+<!-- Misc. buttons -->
+<center>
+<button class="button" onclick='create()'>Open Cloaked</button><button class="button" onclick="openFullscreen();">Full Screen</button><script>
+
+      function openFullscreen() {
+        var elem = document.getElementById("game");
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+          elem.msRequestFullscreen();
+        }
+      }
+      </script><script>
+        //load code (new)
+        function load(){
+          var load = document.getElementById("game");
+          load.src = "https://g4mes-on-github-io.github.io/" + getUrlParameter('game');
+        }
+
+
+        function create() {
+           //cloaker
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = "https://g4mes-on-github-io.github.io/" + getUrlParameter('game');
+            win.document.body.appendChild(iframe);
+        }
+        </script>
+
+<!-- Iframe element -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
+     crossorigin="anonymous"></script>
+<!-- horizontal -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:450px"
+     data-ad-client="ca-pub-9797604980960415"
+     data-ad-slot="9804021911"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><embed id="game" width="800" height="450" frameborder="0"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
+     crossorigin="anonymous"></script>
+<!-- banneradd -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
+     crossorigin="anonymous"></script>
+<!-- horizontal -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:120px;height:450px"
+     data-ad-client="ca-pub-9797604980960415"
+     data-ad-slot="9804021911"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
+
+<script>
+// URL param get
+function getUrlParameter(name) {
+    name = name.replace(/[[]/, '\$$[').replace(/[]$$]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
+// Old broken load code
+function loadGameIframe() {
+    var gameParam = getUrlParameter('game');
+    var iframe = document.getElementById('game');
+//game assets url loader//
+    iframe.src = "https://g4mes-on-github-io.github.io/" + gameParam;
+
+  openFullscreen();
+};
+
+//button code for old loader
+document.getElementById('loadIframeBtn').addEventListener('click', loadGameIframe);
+</script>
+<link rel="stylesheet" href="./css/style.css">
+  <!--redirect button style location-->
+<style>
+
+  #redirect {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+</style>
+    <button id="redirect" onclick="goToHomePage()"><h1>GO BACK</h1></button>
+    <div id="reloadGame"><center><button class="button" onclick="load()">Reload Game</button></center></div>
+    <script>
+      //redirect
+function goToHomePage() {
+  window.location.href = '//' + window.location.hostname + "/games.html";
+}
+</script>
+  <!--Spacers-->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+</html>
