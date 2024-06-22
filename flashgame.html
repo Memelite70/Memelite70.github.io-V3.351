@@ -1,0 +1,40 @@
+<html><head><link rel="stylesheet" href="css/style.css"><title>Flash Game - Geometry Tryhard</title>
+<style>
+	#redirect {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+    }
+</style>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
+     crossorigin="anonymous"></script>
+<script>
+  function launchFlash() {
+      var url = getUrlParameter('game');
+      var win = window.open();
+      win.document.body.style.margin = '0';
+      win.document.body.style.height = '100vh';
+      var iframe = win.document.createElement('iframe');
+      iframe.style.border = 'none';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.margin = '0';
+      iframe.src = "gtst1.github.io/flash.html?game=SWF/" + url;
+      win.document.body.appendChild(iframe);
+      goToHomePage()
+  }
+    function getUrlParameter(name) {
+        name = name.replace(/[[]/, '\$$[').replace(/[]$$]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+    function goToHomePage() {
+  window.location.href = "games.html";
+}
+  </script>
+  </head>
+  <center><button class="button" onclick='launchFlash()'>Launch Game</button><div id="infotext"><h2>When game is launched, this page will return to the games page.</h2></div></center>
+  
+    <button id="redirect" onclick="goToHomePage()"><h1>GO BACK</h1></button>
+</html>
