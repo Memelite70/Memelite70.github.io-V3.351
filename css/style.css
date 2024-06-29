@@ -71,6 +71,11 @@ h3 {
   color: #ffffff;
   font-size: 130px;
 }
+h3 li a{
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 130px;
+}
 html {
   scroll-behavior: smooth;
 }
