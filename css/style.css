@@ -66,6 +66,11 @@ h2 {
   color: #ffffff;
   font-size: 34px;
 }
+h3 {
+  font-family: monospace;
+  color: #ffffff;
+  font-size: 130px;
+}
 html {
   scroll-behavior: smooth;
 }
