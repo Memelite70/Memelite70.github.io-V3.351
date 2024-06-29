@@ -42,10 +42,13 @@
             iframe.src = url;
             win.document.body.appendChild(iframe);
         }
+                      function goToHomePage() {
+  window.location.href = '//' + window.location.hostname + "/games.html";
+}
         </script>
 
 
       </center><center>
-      <a href="index.html" class="button">Return to main page</a>
+      <a onclick="goToHomePage()" class="button">Return to main page</a>
     </body></center>
 </html>
