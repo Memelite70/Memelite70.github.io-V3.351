@@ -133,6 +133,7 @@ window.cookieconsent.initialise({
              
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
+            win.document.title = '404 not found';
             var iframe = win.document.createElement('iframe');
             iframe.style.border = 'none';
             iframe.style.width = '100%';
@@ -140,6 +141,7 @@ window.cookieconsent.initialise({
             iframe.style.margin = '0';
             iframe.src = "https://" + window.location.hostname;
             win.document.body.appendChild(iframe);
+          window.location.href = "https://drive.google.com";
         }
         </script>
   <div>
@@ -157,21 +159,7 @@ window.cookieconsent.initialise({
                         <div>
                   <a class="button" onclick="window.open('dump/rammerhead/','_blank','width=1600,height=900');">Rammerhead!</a>
               </div>
-            <script>
-        function create() {
-            var url = "//" + window.location.hostname;
-            var win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
-        }
-        </script>
+  
                     
 
                         <div>
