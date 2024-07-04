@@ -123,8 +123,25 @@ window.cookieconsent.initialise({
             </div>
 
                <div>
-              <a onclick="create()" class="button">Cloak Me!</a>
+              <a onclick="cloakme()" class="button">Cloak Me!</a>
             </div>
+                       <script>
+        function cloakme() {
+           
+
+            var win = window.open();
+             
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = "https://" + window.location.hostname;
+            win.document.body.appendChild(iframe);
+        }
+        </script>
   <div>
         <a href="links.html" class="button">Alternate links!</a>
             </div>
