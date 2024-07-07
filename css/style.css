@@ -1,55 +1,171 @@
-.games {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  justify-content: space-between;
-  grid-gap: 2rem;
-  margin: 1rem 2rem 2rem 2rem;
-  background: linear-gradient(60deg, #000000 0%, #143C21 100%);
+body{
+   background: linear-gradient(60deg, #000000 0%, #143C21 100%);
+   cursor: cell;
 }
 
-.game {
-  height: 240px;
-  width: 200px;
-
-  text-decoration: none;
+.gameframe{
+   height: 112px;
+  width: 112px;
   border-radius: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  -webkit-user-select: none;
-  user-select: none;
-  position: relative;
-  transition: transform 0.1s;
+  cursor: cell;
+  text-decoration: none;
 }
-
-.game:hover {
+.gameframe img{
+  height: 112px;
+  width: 112px;
+  border-color: #143C21;
+  border-radius: 15px;
+  transition: transform 0.35s;
+}
+.gameframe img:hover{
   transform: scale(0.925);
 }
-
-.game[hidden] {
+.gameframetext{
   display: none;
-}
-
-.game-image {
-  background: #143C21;
-  object-fit: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 15px 15px 0 0;
-}
-
-.game-text {
-  line-height: 40px;
-  width: 200px;
+  clear: both;
   text-align: center;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  margin:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+  
+  .gameframetext:hover {
+  display: block;
+  opacity: 1;
+}
+.topbar-navigation {
+  background: #1b2f31;
+  background: linear-gradient(90deg, #000000 0%, #1b2f31, 100%);
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #ffffff;
-  padding: 0 10px;
-  font-size: 18px;
+  border-radius: 20px;
+  position: sticky;
+  cursor: cell;
+
+}
+.topbar-navigation a{
+  cursor: cell;
+  color: #1cc49d;
+  background-color: #1b2f31;
+  float: left;
+  display: flex;
+  height: 3em;
+  width: 8em;
+  font-size: 16px;
+  border-radius: 20px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.topbar-navigation a{transition-duration: 0.2s}
+.topbar-navigation a:hover{
+  cursor: cell;
+  color: #1b2f31;
+  background-color: #1cc49d;
+  float: left;
+  display: flex;
+  height: 3em;
+  width: 8em;
+  font-size: 16.5px;
+  border-radius: 20px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.topbar-navigation a.current-page{
+  cursor: cell;
+  color: #1b2f31;
+  background-color: #1cc49d;
+  float: left;
+  display: flex;
+  height: 3em;
+  width: 8em;
+  font-size: 16px;
+  border-radius: 20px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.topbar-navigation a.current-page{transition-duration: 0.2s}
+.topbar-navigation a.current-page:hover{
+  cursor: cell;
+  color: #1b2f31;
+  background-color: #1cc49d;
+  float: left;
+  display: flex;
+  height: 3em;
+  width: 8em;
+  font-size: 16.5px;
+  border-radius: 20px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+button{
+  float: none;
+  color: #1cc49d;
+  background-color: #1b2f31;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 2px;
+  font-weight: 400;
+  cursor: cell;
+  height: 3em;
+  width: 8em;
+  display: flex;
+  transition-duration: .25s;
+}
+button:hover{
+  float: none;
+  color: #1b2f31;
+  background-color: #1cc49d;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 2px;
+  font-weight: 400;
+  cursor: cell;
+  height: 3.1em;
+  width: 8.2em;
+  display: flex;
+
+}
+.button{
+  float: none;
+  color: #1cc49d;
+  background-color: #1b2f31;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 2px;
+  font-weight: 400;
+  cursor: cell;
+  height: 3em;
+  width: 8em;
+  display: flex;
+  transition-duration: .25s;
+  text-decoration: none;
+}
+.button:hover{
+  float: none;
+  color: #1b2f31;
+  background-color: #1cc49d;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 2px;
+  font-weight: 400;
+  cursor: cell;
+  height: 3.1em;
+  width: 8.2em;
+  display: flex;
+  text-decoration: none;
 }
   h1 {
   font-family: monospace;
@@ -71,139 +187,8 @@ h3 {
   color: #ffffff;
   font-size: 130px;
 }
-h3 li a{
-  font-family: monospace;
-  color: #ffffff;
-  font-size: 95px;
-}
-html {
-  scroll-behavior: smooth;
-}
-body{
-  background: linear-gradient(60deg, #000000 0%, #143C21 100%);}
-.button {
-  float: center;
-  color: #1cc49d;
-
-  background-color: #1b2f31;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 8em;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  transition-duration: 0.3s;
-  margin: 4px 2px;
-}
-
-.button:hover {
-  color: #1b2f31;
-  background-color: #1cc49d;
-  font-size: 16.5px; 
-  font-weight: 700;
-  transition-duration: 0.3s; 
-}
-
-.topnav {
-   background: #1b2f31;
-background: linear-gradient(90deg, #000000 0%, #1b2f31) 100%);
-  overflow: hidden;
-  border-radius: 50px;
-  position: sticky;
-}
-.topnav a{
-  float: left;
-  color: #1cc49d;
-  background-color: #1b2f31;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 8em;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-
-
-}
-.topnav a{transition-duration: 0.3s}
-.topnav a:hover {
-    color: #1b2f31;
-  background-color: #1cc49d;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 8em;
-  text-decoration: none;
- font-size: 16.5px;
-  font-weight: 700;
-}
-.topnav a.active{
-  color: #1b2f31;
-  background-color: #1cc49d;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 8em;
-  text-decoration: none;
- font-size: 16px;
-  font-weight: 700;
-}
-.topnav a.active:hover{
-  color: #1b2f31;
-  background-color: #1cc49d;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 8em;
-  text-decoration: none;
- font-size: 16.5px;
-  font-weight: 700;
-}
-.topnav a:hover{
-  float: left;
-  color: #1cc49d;
-  background-color: #1b2f31;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 8em;
-  text-decoration: none;
-  font-size: 16.5px;
-  font-weight: 600;
-}
-li {
-  font-family: monospace;
-  color: #ffffff;
-  font-size: 16px;
-
-
-}
-.topnav button{
-  float: left;
-  color: #1cc49d;
-  background-color: #1b2f31;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3em;
-  width: 8em;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-
-
-}
+#modebutton{
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
