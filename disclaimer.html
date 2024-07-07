@@ -1,7 +1,8 @@
 <head>
-<link rel="stylesheet" href="css/style.css">
+
 <title>Disclaimer - Geometry Tryhard</title>
-<div class="topnav">
+<script src="style.js">styleload();</script>
+<div class="topbar-navigation">
   <a href="index.html">Home</a>
   <a  href="games.html">Games</a>
 
@@ -9,10 +10,14 @@
   <a href="mailto: geometry.tryhard.site@gmail.com" target="_blank">Contact Me</a>
   <a  href="https://forms.gle/veKkmaY3wUTw3seG7" target="_blank">Request A Game</a>
 
-  <a class="active" href="disclaimer.html">Disclaimer</a>
+  <a class="current-page" href="disclaimer.html">Disclaimer</a>
       <a href="dump/spinningrat.online/index.html" target="_blank">Free Bird</a>
 </div>
-  </head>
-  <body>
-<center><iframe src="disclaimer-embed.html" style="width:1475px;height:675px;border:0;"></iframe></center>
+<div id="modebutton">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<button type="button" onclick="switchstyles();" id="dark mode">Change color</button>
+<link rel="stylesheet" id="style" href="">
+</div>
+
+<center><iframe onload="styleload();" src="disclaimer-embed.html" style="width:1475px;height:675px;border:0;"></iframe></center>
   </body>
