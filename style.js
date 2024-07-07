@@ -11,13 +11,14 @@ function darkmode(obj) {
 function styleload() {
     var storage = localStorage.getItem('style');
     document.getElementById('style').href = storage;
-    checkBox(storage === 'css/style.css');
+   if (storage === null){
+       localStorage.setItem('style', 'css/style.css');
+   styleload()
+   }
+ 
 }
 
-function checkBox(checked) {
-    var darkModeToggle = document.getElementById('dark-mode-toggle');
-    darkModeToggle.checked = checked;
-}
+
 function switchstyles(){
  var current = localStorage.getItem('style');
  if(current === 'css/style.css'){
@@ -35,4 +36,8 @@ function switchstyles(){
    localStorage.setItem('style', 'css/style.css');
    styleload()
  }
+    else{
+        localStorage.setItem('style', 'css/style.css');
+   styleload()
+    }
 }
