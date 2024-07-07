@@ -1,4 +1,12 @@
-<html><head><link rel="stylesheet" href="css/style.css"><title>Flash Game - Geometry Tryhard</title>
+<html><head><script>styleload();</script><link id="style" rel="stylesheet" href=""><title>Flash Game - Geometry Tryhard</title>
+    <link id="style" rel="stylesheet" href="">
+    <script src="style.js"></script>
+    <body onload="styleload();">
+<div id="modebutton">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<button type="button" onclick="switchstyles();" id="dark mode">Change color</button>
+
+</div>
 <style>
 	#redirect {
       position: fixed;
@@ -33,8 +41,8 @@
   window.location.href = "games.html";
 }
   </script>
-  </head>
-  <center><button class="button" onclick='launchFlash()'>Launch Game</button><div id="infotext"><h2>When game is launched, this page will return to the games page.</h2></div></center>
+
+  <center><button class="button" onclick='launchFlash()'>Launch Game</button><div id="infotext"><h2 onload="styleload();">When game is launched, this page will return to the games page.</h2></div></center>
   
-    <button id="redirect" onclick="goToHomePage()"><h1>GO BACK</h1></button>
+    <button id="redirect" onclick="goToHomePage()"><h1>&#8678;BACK</h1></button>
 </html>
