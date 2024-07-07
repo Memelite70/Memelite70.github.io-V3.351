@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,7 @@ styleload();
 
 
 <!-- Misc. buttons -->
-<center>
+<center><div id="text"><p>Some Unity games need to be opened in fullscreen to work, try that if the reload button is not working.</p></div>
 <button class="button" onclick='create()'>Open Cloaked</button><button class="button" onclick="openFullscreen();">Full Screen</button><script>
 
       function openFullscreen() {
@@ -42,6 +43,7 @@ styleload();
           var load = document.getElementById("game");
           load.src = "https://gtst1.github.io/" + getUrlParameter('game');
           styleload();
+          openFullscreen();
         }
 
 
@@ -60,7 +62,7 @@ styleload();
             iframe.src = "https://gtst1.github.io/" + getUrlParameter('game');
             win.document.body.appendChild(iframe);
         }
-        </script><div id="embed"><embed id="game" width="800" height="450" frameborder="0" style="cursor: cell;"></div></center>
+        </script><div id="embed"><embed onload="openFullscreen();" id="game" width="800" height="450" frameborder="0" style="cursor: cell;"></div></center>
 
 <script>
 // URL param get
