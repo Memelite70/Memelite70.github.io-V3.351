@@ -2,7 +2,6 @@ body{
    background: linear-gradient(60deg, #000000 0%, #EE1900 100%);
    cursor: cell;
 }
-
 .gameframe{
    height: 112px;
   width: 112px;
