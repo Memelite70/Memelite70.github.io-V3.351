@@ -192,3 +192,35 @@ h3 {
       right: 10px;
        z-index: 99;
     }
+#leftFloatAd{
+  position: fixed;
+      top: 75px;
+      left: 15px;
+      width: 120px;
+      height: 610px;
+      cursor: cell;
+}
+#rightFloatAd{
+  position: fixed;
+      top: 75px;
+      right: 15px;
+      width: 120px;
+      height: 610px;
+      cursor: cell;
+}
+#leftFloatAdWide{
+  position: fixed;
+      top: 75px;
+      left: 15px;
+      width: 240px;
+      height: 610px;
+      cursor: cell;
+}
+#rightFloatAdWide{
+  position: fixed;
+      top: 75px;
+      right: 15px;
+      width: 240px;
+      height: 610px;
+      cursor: cell;
+}
