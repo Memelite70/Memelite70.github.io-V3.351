@@ -122,6 +122,7 @@ button{
   width: 8em;
   display: flex;
   transition-duration: .25s;
+   text-decoration: none;
 }
 button:hover{
   float: none;
@@ -135,6 +136,7 @@ button:hover{
   height: 3.1em;
   width: 8.2em;
   display: flex;
+   text-decoration: none;
 
 }
 .button{
@@ -150,6 +152,7 @@ button:hover{
   width: 8em;
   display: flex;
   transition-duration: .25s;
+   text-decoration: none;
 }
 .button:hover{
   float: none;
