@@ -1,0 +1,53 @@
+<head>
+<title>Youtube | Geometry Tryhard</title>
+<div class="topbar-navigation">
+  <link rel="stylesheet" id="style" href="">
+  <script>
+    function loadFrameSrc();
+    var YoutubeSRC = localStorage.getItem('YoutubeSRC');
+    document.getElementById('frame').src = YoutubeSRC;
+   if (YoutubeSRC === null){
+       localStorage.setItem('YoutubeSRC', 'https://tiny-garage-load.vercel.app');
+   loadFrameSrc()
+   }
+    function framechange(){
+ var current = localStorage.getItem('YoutubeSRC');
+ if(current === 'https://tiny-garage-load.vercel.app'){
+  localStorage.setItem('YoutubeSRC', '');
+  loadFrameSrc()
+}
+ else if(current === 'https://tiny-garage-load.on-fleek.app'){
+  localStorage.setItem('YoutubeSRC', 'https://alerbra8.top');
+  loadFrameSrc()
+ }
+ else if(current === 'https://alerbra8.top'){
+   localStorage.setItem('YoutubeSRC', 'https://tiny-garage-load.vercel.app');
+   loadFrameSrc()}
+    else{
+        localStorage.setItem('YoutubeSRC', 'https://tiny-garage-load.vercel.app');
+   loadFrameSrc()
+    }
+}
+  </script>
+    <script src="./style.js"></script>
+  <a href="index.html">Home</a>
+  <a  href="games.html">Games</a>
+
+
+  <a href="mailto: geometry.tryhard.site@gmail.com" target="_blank">Contact Me</a>
+  <a  href="https://forms.gle/veKkmaY3wUTw3seG7" target="_blank">Request A Game</a>
+
+  <a href="disclaimer.html">Disclaimer</a>
+      <a href="dump/spinningrat.online/index.html" target="_blank">Free Bird</a>
+</div></head>
+<body onload="styleload();">
+ <iframe id="YoutubeSRC" onload="loadFrameSrc();" src="" style="position:fixed; top:50px; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;">
+    Your browser doesn't support iframes
+</iframe>
+  <div id="modebutton">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">styleload();</script>
+
+          <button type="button" onclick="switchstyles();" id="dark mode">Change color</button>
+<link rel="stylesheet" id="style" href="">
+</div>
+  
