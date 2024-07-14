@@ -41,7 +41,7 @@ styleload();
         //load code (new)
         function load(){
           var load = document.getElementById("game");
-          load.src = "https://gtst1.github.io/" + getUrlParameter('game');
+          load.src = "game.embed.html?game=" + getUrlParameter('game');
           styleload();
           openFullscreen();
         }
@@ -78,7 +78,7 @@ function loadGameIframe() {
     var gameParam = getUrlParameter('game');
     var iframe = document.getElementById('game');
 //game assets url loader//
-    iframe.src = "https://g4mes-on-github-io.github.io/" + gameParam;
+    iframe.src = "game.embed.html?game=" + gameParam;
 
   openFullscreen();
 };
@@ -132,5 +132,20 @@ function goToHomePage() {
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script></div>
+<style>
+  #imageforgame{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+  </style>
+  <div id="imageforgame">  <p>hehe</p></div>
+
+<script>
+  const gameImage = localStorage.getItem('gameimage');
+  document.getElementById('imageforgame').style.backgroundImage = `url(${gameImage})`;
+</script>
+
+
 </body>
 </html>
