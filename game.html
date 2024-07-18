@@ -24,7 +24,7 @@ styleload();
 
 
 <!-- Misc. buttons -->
-<center><div id="text"><p>Some games need to be opened in fullscreen to work, try that if the reload button is not working.</p></div>
+<center><div onload="load()" id="text"><p>Some games need to be opened in fullscreen to work, try that if the reload button is not working.</p></div>
 <button class="button" onclick='create()'>Open Cloaked</button><button class="button" onclick="openFullscreen();">Full Screen</button><script>
 
       function openFullscreen() {
@@ -59,7 +59,7 @@ styleload();
             iframe.style.height = '100%';
             iframe.style.margin = '0';
             iframe.style.cursor = 'cell';
-            iframe.src = "https://gtst1.github.io/" + getUrlParameter('game');
+            iframe.src = "game.embed.html?game=" + getUrlParameter('game');
             win.document.body.appendChild(iframe);
         }
         </script><div id="embed"><embed onload="openFullscreen();" id="game" width="800" height="450" frameborder="0" style="cursor: cell;"></div></center>
@@ -105,6 +105,7 @@ document.getElementById('loadIframeBtn').addEventListener('click', loadGameIfram
 function goToHomePage() {
   window.location.href = "./games.html";
 }
+      load();
 </script>
   <!--Spacers-->
 <p>&nbsp;</p>
