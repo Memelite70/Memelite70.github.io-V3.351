@@ -2,6 +2,10 @@ body{
    background: linear-gradient(60deg, #000000 0%, #143C21 100%);
    cursor: cell;
 }
+#iframeforgames{
+  background: linear-gradient(60deg, #000000 0%, #143C21 100%);
+  cursor: cell;
+}
 
 .gameframe{
    height: 112px;
@@ -16,6 +20,7 @@ body{
   border-color: #143C21;
   border-radius: 15px;
   transition: transform 0.35s;
+  loading: lazy;
 }
 .gameframe img:hover{
   transform: scale(0.925);

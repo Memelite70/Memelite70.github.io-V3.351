@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,11 +14,12 @@
 <script>
 styleload()
 </script>    <script onload="styleload()" src="style.js"></script>
+<script onload="styleload()" src="js/gamesloader.js"></script>
 </head>
 
 <body onload="styleload()">
 
-
+<div id="gameFrameHidden"></div>
 
     <center>
     <div class="topbar-navigation">
@@ -46,167 +49,165 @@ styleload()
 <a href="https://forms.gle/veKkmaY3wUTw3seG7" target="_blank"> Request A Game </a>
   </div>  
 <br>
-     
 
 
 
-  
        <div style="width: 1200px;" class="games">
-<a class="gameframe" href="game.html?game=g1/motox3m/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/motox3m/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mx3m-1.jpg" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/motox3m2/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/motox3m2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mx3m-2.jpg" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/motox3m3/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/motox3m3/');">
 
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mx3m-3.jpg" onerror="this.src='./globe.svg'"> 
-  </a>
-         
+  </span>
 
-  
-<a class="gameframe" href="game.html?game=g1/motox3m4/">
+
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/motox3m4/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mx3m-4.jpg" onerror="this.src='./globe.svg'">
-</a><a class="gameframe" href="game.html?game=g1/motox3m5/">
+</span><span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/motox3m5/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mx3m-5.jpg" onerror="this.src='./globe.svg'">
-</a>
-    
-    <a class="gameframe" href="game.html?game=g1/motox3m6/">
+</span>
+
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/motox3m6/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mx3m-6.jpg" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/stickman-hook/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/stickman-hook/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/stickmanhook.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-  
-         
-    <a class="gameframe" href="game.html?game=g1/dreadhead-parkour">
+
+
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/dreadhead-parkour">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/dreadhead-parkour.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/dogeminer/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/dogeminer/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/dogeminer.png" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="game.html?game=play/">
+</span>
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=play/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/doge-miner-2.png" onerror="this.src='./globe.svg'">
-</a>
-   <a class="gameframe" href="game.html?game=g1/temple-of-boom/">
+</span>
+   <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/temple-of-boom/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/temple-of-boom.jpg" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/justfall.lol/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/justfall.lol/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/justfall.png" onerror="this.src='./globe.svg'">
-</a>
- 
-  
-    <a class="gameframe" href="game.html?game=g1/mineclicker-reexcavated/">
+</span>
+
+
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/mineclicker-reexcavated/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mineclicker.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/subway-surfers/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/subway-surfers/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/subway-surfers.png" onerror="this.src='./globe.svg'">
-</a><a class="gameframe" href="game.html?game=g1/papas-games/">
+</span><span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/papas-games/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/papasgames.png" onerror="this.src='./globe.svg'">'
-</a>
-<a class="gameframe" href="game.html?game=g1/swerve/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/swerve/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/swerve.png" onerror="this.src='./globe.svg'">
-</a>
-                    
+</span>
 
-    <a class="gameframe" href="game.html?game=g1/sm64/">
+
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/sm64/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/sm64.png" onerror="this.src='./globe.svg'"> 
-</a>
-         
-  
+</span>
 
 
-    <a class="gameframe" href="game.html?game=g1/jetpack-joyride/">
+
+
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/jetpack-joyride/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/jetpackjoyride.png" onerror="this.src='./globe.svg'">
-</a>
- 
-    <a class="gameframe" href="game.html?game=g1/angry-birds/">
+</span>
+
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/angry-birds/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/angrybirds.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="flashgame.html?game=badpiggies.swf">
+</span>
+<span class="gameframe" onclick="launchIframe('flashgame.html?game=badpiggies.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/badpiggies.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="game.html?game=g1/henry-stickmin/">
+</span>
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/henry-stickmin/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/henry-stickmin.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/core-ball/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/core-ball/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/core-ball.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
 
-<a class="gameframe" href="game.html?game=g1/dante/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/dante/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/dante.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/geodash/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/geodash/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/geodash.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/minecraft-1.5/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/minecraft-1.5/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/minecraft-1.5.2.png" onerror="this.src='./globe.svg'"> 
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/backrooms/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/backrooms/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/backrooms.png" onerror="this.src='./globe.svg'">
-</a> 
-         
+</span> 
 
-<a class="gameframe" href="game.html?game=g1/idle-breakout/">
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/idle-breakout/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/idlebreakout.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/fruit-ninja/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/fruit-ninja/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fruit-ninja.jpg" onerror="this.src='./globe.svg'">
-</a>
-         
-<a class="gameframe" href="game.html?game=g1/cannon-basketball-4/">
+</span>
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/cannon-basketball-4/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cannon-basketball-4.jpg" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/paper-io-2/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/paper-io-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/paperio2.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/retrobowl/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/retrobowl/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/retrobowl.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-  
-<a class="gameframe" href="game.html?game=g1/ovo/">
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/ovo/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ovo.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/tiny-fishing/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/tiny-fishing/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/tiny-fishing.png" onerror="this.src='./globe.svg'">
-</a>
-         
+</span>
 
-<a class="gameframe" href="game.html?game=g1/drive-mad/">
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/drive-mad/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/drivemad.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/bitlife/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/bitlife/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/bitlife.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
 
 
-<a class="gameframe" href="game.html?game=g1/ballistic-chickens/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/ballistic-chickens/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ballistic-chickens.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g1/flappy-bird/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/flappy-bird/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/flappy-bird.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="game.html?game=g1/awesome-tanks/">
+</span>
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/awesome-tanks/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/awesome-tanks.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="game.html?game=g1/awesome-tanks2/">
+</span>
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/awesome-tanks2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/awesome-tanks-2.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g1/missiles/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/missiles/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/missiles.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
      crossorigin="anonymous"></script>
 <!-- gameframe -->
@@ -218,156 +219,156 @@ styleload()
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<a class="gameframe" href="game.html?game=g1/cookie-clicker/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g1/cookie-clicker/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cookie-clicker.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-    <a class="gameframe" href="flashgame.html?game=btd5.swf">
+    <span class="gameframe" onclick="launchIframe('flashgame.html?game=btd5.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/btd5.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
              <!--end g1-->
-<a class="gameframe" href="game.html?game=g2/sketchbook-0.4/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/sketchbook-0.4/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/sketchbook.png" onerror="this.src='./globe.svg'">
-</a>
-         
+</span>
 
 
-<a class="gameframe" href="game.html?game=g2/among-us/">
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/among-us/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/among-us.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g2/drift-boss/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/drift-boss/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/drift-boss.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
 
-<a class="gameframe" href="game.html?game=g2/drift-hunters/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/drift-hunters/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/drift-hunters.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g2/stack/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/stack/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/stack.png" onerror="this.src='./globe.svg'">
-</a>
-         
+</span>
 
- <a class="gameframe" href="game.html?game=g2/snowball.io/">
+
+ <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/snowball.io/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snowball-io.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g2/slope/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/slope/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/slope.png" onerror="this.src='./globe.svg'">
-</a>
-         
-<a class="gameframe" href="game.html?game=g2/basket-random/">
+</span>
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/basket-random/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/basket-random.png" onerror="this.src='./globe.svg'">
-</a> <a class="gameframe" href="game.html?game=g5/basketbros-io/">
+</span> <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/basketbros-io/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/basketbros-io.jpg" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="game.html?game=g5/basketball-stars/">
+</span>
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/basketball-stars/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/basketball-stars.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g2/draw-the-hill/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/draw-the-hill/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/draw-the-hill.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
 
-  
 
-      <a class="gameframe" href="game.html?game=g2/duck-life-1">
-  <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ducklife1.png" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="game.html?game=g2/duck-life-2/">
+                     <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/duck-life-1/');">
+           <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ducklife1.png" onerror="this.src='./globe.svg'">
+         </span>
+
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/duck-life-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ducklife2.png" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="game.html?game=g2/duck-life-3/">
+</span>
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/duck-life-3/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ducklife3.png" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="game.html?game=g2/duck-life-4/">
+</span>
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/duck-life-4/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ducklife4.png" onerror="this.src='./globe.svg'">
-</a>
-             <a class="gameframe" href="flashgame.html?game=duck-life-treasure-hunt.swf">
+</span>
+             <span class="gameframe" onclick="launchIframe('flashgame.html?game=duck-life-treasure-hunt.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ducklife5.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="flashgame.html?game=learntofly.swf">
+</span>
+<span class="gameframe" onclick="launchIframe('flashgame.html?game=learntofly.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/learn-to-fly.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="flashgame.html?game=learntofly2.swf">
+</span>
+    <span class="gameframe" onclick="launchIframe('flashgame.html?game=learntofly2.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/learn-to-fly-2.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="flashgame.html?game=learntofly3.swf">
+</span>
+    <span class="gameframe" onclick="launchIframe('flashgame.html?game=learntofly3.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/learn-to-fly-3.png" onerror="this.src='./globe.svg'">
-</a>
-       <a class="gameframe" href="game.html?game=g2/baldis-basics/">
+</span>
+       <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/baldis-basics/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/baldis-basics.png" onerror="this.src='./globe.svg'">
-      </a>           
+      </span>           
 
 
-           <a class="gameframe" href="game.html?game=g2/time-shooter-2/">
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/time-shooter-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/time-shooter-2.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g2/time-shooter-3/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/time-shooter-3/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/time-shooter-3.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-         <a class="gameframe" href="game.html?game=g2/superhot/">
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/superhot/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/superhot.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-<a class="gameframe" href="game.html?game=g2/funny-shooter-2/">
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/funny-shooter-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/funny-shooter-2.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g2/doom-1993/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/doom-1993/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/doom-1993.png" onerror="this.src='./globe.svg'">
-</a>
-               <a class="gameframe" href="game.html?game=g2/quake/">
+</span>
+               <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/quake/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/quake.png" onerror="this.src='./globe.svg'">
-</a>
-         
-      <a class="gameframe" href="game.html?game=g2/pixel-combat-2/">
+</span>
+
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/pixel-combat-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/pixel-combat-2.png" onerror="this.src='./globe.svg'">
-</a>
-      <a class="gameframe" href="game.html?game=g2/pixel-gun-survival/">
+</span>
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/pixel-gun-survival/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/pixel-gun-survival.png" onerror="this.src='./globe.svg'"> 
-</a>
-          
+</span>
+
 <!--end g2-->
 
-        <a class="gameframe" href="game.html?game=g3/1v1.lol/">
+        <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/1v1.lol/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/1v1-lol.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="game.html?game=g3/blockpost/">
+</span>
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/blockpost/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/blockpost.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
 
- 
-      
-      <a class="gameframe" href="game.html?game=g3/fnaf-1/">
+
+
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-1/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf.png" onerror="this.src='./globe.svg'">
-</a>
-                  
+</span>
 
-  
-      <a class="gameframe" href="game.html?game=g3/fnaf-hard-mode/">
+
+
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-hard-mode/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf-hard-mode.png" onerror="this.src='./globe.svg'"> 
-</a>
-        <a class="gameframe" href="game.html?game=g3/fnaf-2/">
+</span>
+        <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf-2.png" onerror="this.src='./globe.svg'"> 
-</a>
-        <a class="gameframe" href="game.html?game=g3/fnaf-3/">
+</span>
+        <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-3/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf-3.png" onerror="this.src='./globe.svg'"> 
-</a>
-  <a class="gameframe" href="game.html?game=g3/fnaf-4/">
+</span>
+  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-4/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf-4.png" onerror="this.src='./globe.svg'"> 
-</a>
-      <a class="gameframe" href="game.html?game=g3/fnaf-5/">
+</span>
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-5/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf-5.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="game.html?game=g3/fnaf-6/">
+</span>
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-6/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf-6.png" onerror="this.src='./globe.svg'"> 
-</a>
-      <a class="gameframe" href="game.html?game=g3/fnaf-ucn/">
+</span>
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaf-ucn/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaf-ucn.png" onerror="this.src='./globe.svg'"> 
-</a>
+</span>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
      crossorigin="anonymous"></script>
@@ -379,152 +380,152 @@ styleload()
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-            <a class="gameframe" href="game.html?game=g2/cluster-rush/">
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/cluster-rush/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cluster-rush.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
 
 
-    <a class="gameframe" href="game.html?game=g2/blumgi-slime/">
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/blumgi-slime/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/blumgi-slime.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g2/blumgi-rocket/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/blumgi-rocket/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/blumgi-rocket.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g2/tabs/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/tabs/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/tabs.png" onerror="this.src='./globe.svg'">
-</a>
-  
+</span>
+
     <span class="gameframe" onclick="window.open('https://www.google.com/logos/2019/july4th19/r6/july4th19.html?hl=en','_blank','width=1600,height=900');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/google-baseball.png" onerror="this.src='./globe.svg'">
 </span>
-                          <a class="gameframe" href="game.html?game=g2/g-switch-3/">
+                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g2/g-switch-3/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/g-switch-3.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g3/fnaw/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/fnaw/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnaw.png" onerror="this.src='./globe.svg'">
-</a>
- <a class="gameframe" href="game.html?game=g3/granny/">
+</span>
+ <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/granny/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/granny.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
 
-        <a class="gameframe" href="game.html?game=g3/scratch-snake-game/">
+        <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/scratch-snake-game/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/slither.png" onerror="this.src='./globe.svg'">
-</a>
-      
-     
-           <a class="gameframe" href="flashgame.html?game=jacksmith.swf">
+</span>
+
+
+           <span class="gameframe" onclick="launchIframe('flashgame.html?game=jacksmith.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/jacksmith.png" onerror="this.src='./globe.svg'">
-</a>
-  
-      
-      
+</span>
 
-      <a class="gameframe" href="game.html?game=g3/tomb-of-the-mask/">
+
+
+
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/tomb-of-the-mask/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/tomb-of-the-mask.png" onerror="this.src='./globe.svg'">
-</a>
-      <a class="gameframe" href="game.html?game=g3/rooftop-snipers-1/">
+</span>
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/rooftop-snipers-1/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/rooftop-snipers-1.png" onerror="this.src='./globe.svg'">
-</a>
-      <a class="gameframe" href="game.html?game=g3/rooftop-snipers-2/">
+</span>
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/rooftop-snipers-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/rooftop-snipers-2.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g3/getaway-shootout/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/getaway-shootout/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/getaway-shootout.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-      <a class="gameframe" href="game.html?game=g3/frying-nemo/">
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/frying-nemo/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/frying-nemo.png" onerror="this.src='./globe.svg'">
-</a>
-        <a class="gameframe" href="game.html?game=g3/monkey-mart/">
+</span>
+        <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/monkey-mart/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/monkey-mart.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-  
-      <a class="gameframe" href="flashgame.html?game=tosstheturtle.swf">
+
+      <span class="gameframe" onclick="launchIframe('flashgame.html?game=tosstheturtle.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/tosstheturtle.png" onerror="this.src='./globe.svg'">
-</a>
-      <a class="gameframe" href="game.html?game=g3/snow-rider-3d/">
+</span>
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snow-rider-3d/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snow-rider-3d.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-      
-      <a class="gameframe" href="game.html?game=g3/recoil/">
+
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/recoil/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/recoil.png" onerror="this.src='./globe.svg'">
-</a>
-      <a class="gameframe" href="game.html?game=g3/eggycar/">
+</span>
+      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/eggycar/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/eggy-car.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-           <a class="gameframe" href="game.html?game=g3/house-of-hazards/">
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/house-of-hazards/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/house-of-hazards.png" onerror="this.src='./globe.svg'">
-</a>
-                 
+</span>
 
-           <a class="gameframe" href="game.html?game=g3/stickwar/">
+
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/stickwar/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/stick-war.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g3/stickmerge/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/stickmerge/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/stick-merge.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g3/smash-karts/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/smash-karts/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/smash-karts.png" onerror="this.src='./globe.svg'">
-</a>
-           
-           
-           <a class="gameframe" href="game.html?game=g3/snailbob1/">
+</span>
+
+
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snailbob1/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob1.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g3/snailbob2/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snailbob2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob2.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="flashgame.html?game=snailbob3.swf">
+</span>
+           <span class="gameframe" onclick="launchIframe('flashgame.html?game=snailbob3.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob3.png" onerror="this.src='./globe.svg'"> 
-</a>
-           <a class="gameframe" href="game.html?game=g3/snailbob4/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snailbob4/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob4.png" onerror="this.src='./globe.svg'"> 
-</a>
-           <a class="gameframe" href="game.html?game=g3/snailbob5/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snailbob5/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob5.png" onerror="this.src='./globe.svg'"> 
-</a>
-<a class="gameframe" href="game.html?game=g3/snailbob6/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snailbob6/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob6.png" onerror="this.src='./globe.svg'"> 
-</a>
-<a class="gameframe" href="game.html?game=g3/snailbob7/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snailbob7/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob7.png" onerror="this.src='./globe.svg'"> 
-</a>
-           <a class="gameframe" href="game.html?game=g3/snailbob8/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/snailbob8/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/snailbob8.png" onerror="this.src='./globe.svg'"> 
-</a>
+</span>
 
-  
-<a class="gameframe" href="game.html?game=g3/happywheels/">
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/happywheels/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/happywheels.png" onerror="this.src='./globe.svg'">
-</a>
-             <a class="gameframe" href="game.html?game=g3/cut-the-rope/">
+</span>
+             <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/cut-the-rope/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cut-the-rope.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="flashgame.html?game=flashtetris.swf">
+</span>
+           <span class="gameframe" onclick="launchIframe('flashgame.html?game=">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/tetris.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g3/murder-game/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/murder-game/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/murder-game.png" onerror="this.src='./globe.svg'">
-</a> <a class="gameframe" href="game.html?game=g3/hexgl/">
+</span> <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/hexgl/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/hexgl.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g3/csgo-clicker/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/csgo-clicker/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/csgo-clicker.png" onerror="this.src='./globe.svg'">
-</a>          
+</span>          
 
-  
-           <a class="gameframe" href="game.html?game=g3/google-snake/">
+
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/google-snake/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/google-snake.png" onerror="this.src='./globe.svg'">
-</a>
-       
-<a class="gameframe" href="game.html?game=g3/google-dino/">
+</span>
+
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g3/google-dino/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/google-dino.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
      crossorigin="anonymous"></script>
 <!-- gameframe -->
@@ -535,146 +536,146 @@ styleload()
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<a class="gameframe" href="flashgame.html?game=raftwars.swf">
+<span class="gameframe" onclick="launchIframe('flashgame.html?game=raftwars.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/raft-wars-1.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="flashgame.html?game=raftwars2.swf">
+</span>
+<span class="gameframe" onclick="launchIframe('flashgame.html?game=raftwars2.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/raft-wars-2.png" onerror="this.src='./globe.svg'">
-</a>    <!--end of g3-->
-           <a class="gameframe" href="game.html?game=g4/ai-in-the-sky/">
+</span>    <!--end of g3-->
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/ai-in-the-sky/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ai-in-the-sky.png" onerror="this.src='./globe.svg'">
-</a>         
+</span>         
 
-  
 
-           <a class="gameframe" href="game.html?game=g4/basketball-stars/">
+
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/basketball-stars/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/basketball-stars.png" onerror="this.src='./globe.svg'">
-</a>
-           <a class="gameframe" href="game.html?game=g4/minesweeper/">
+</span>
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/minesweeper/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/minesweeper.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="game.html?game=g4/mario/">
+</span>
+<span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/mario/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/mario.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-         <a class="gameframe" href="flashgame.html?game=bloxorz.swf">
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=bloxorz.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/bloxorz.png" onerror="this.src='./globe.svg'">
-</a>
-<a class="gameframe" href="flashgame.html?game=commando2_1.swf">
+</span>
+<span class="gameframe" onclick="launchIframe('flashgame.html?game=commando2_1.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/commando2.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="flashgame.html?game=minecrafttd.swf">
+</span>
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=minecrafttd.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/minecraft-tower-defence.png" onerror="this.src='./globe.svg'">
-</a>
-         <a class="gameframe" href="flashgame.html?game=supermario63.swf">
+</span>
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=supermario63.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/super-mario-63.png" onerror="this.src='./globe.svg'">
-</a>
-  
-         <a class="gameframe" href="game.html?game=g4/doodle-jump/">
+</span>
+
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/doodle-jump/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/doodle-jump.png" onerror="this.src='./globe.svg'">
-</a>
-        
-         <a class="gameframe" href="flashgame.html?game=pvz.swf">
+</span>
+
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=pvz.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/pvz.png" onerror="this.src='./globe.svg'">
-</a>
-                  
+</span>
 
-  
-         <a class="gameframe" href="game.html?game=g4/vex1/">
+
+
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex1/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex1.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/vex2/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex2.png" onerror="this.src='./globe.svg'"> 
-</a>
+</span>
 
-         <a class="gameframe" href="game.html?game=g4/vex3/">
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex3/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex3.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/vex4/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex4/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex4.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/vex5/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex5/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex5.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/vex6/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex6/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex6.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/vex7/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex7/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex7.png" onerror="this.src='./globe.svg'"> 
-</a>
-                  
+</span>
 
-      
-         <a class="gameframe" href="game.html?game=g4/vex8/">
+
+
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/vex8/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/vex8.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="flashgame.html?game=alien_hominid.swf">
+</span>
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=alien_hominid.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/alienhominid.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="flashgame.html?game=age_of_war.swf">
+</span>
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=age_of_war.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/ageofwar.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="flashgame.html?game=interactivebuddy.swf">
+</span>
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=interactivebuddy.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/interactivebuddy.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="flashgame.html?game=portal.swf">
+</span>
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=portal.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/portal.png" onerror="this.src='./globe.svg'">
-</a>
-         <a class="gameframe" href="game.html?game=g4/bacon-may-die/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/bacon-may-die/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/bacon-may-die.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/rabbit-samurai/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/rabbit-samurai/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/rabbit-samurai.png" onerror="this.src='./globe.svg'"> 
-</a>         
+</span>         
 
-  
-         <a class="gameframe" href="game.html?game=g4/rabbit-samurai2/">
+
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/rabbit-samurai2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/rabbit-samurai2.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/gimme-the-airpod/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/gimme-the-airpod/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/gimmetheairpod.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/game-inside-a-game/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/game-inside-a-game/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/game-inside-a-game.png" onerror="this.src='./globe.svg'"> 
-</a>
-         
-         <a class="gameframe" href="game.html?game=g4/santy-is-home/">
+</span>
+
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/santy-is-home/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/santy-is-home.png" onerror="this.src='./globe.svg'"> 
-  
-</a>
-       <a class="gameframe" href="flashgame.html?game=the-binding-of-isaac.swf">
+
+</span>
+       <span class="gameframe" onclick="launchIframe('flashgame.html?game=the-binding-of-isaac.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/thebindingofisaac.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="flashgame.html?game=achievementunlocked.swf">
+</span>
+         <span class="gameframe" onclick="launchIframe('flashgame.html?game=achievementunlocked.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/achievementunlocked.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/choppy-orc/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/choppy-orc/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/choppyorc.png" onerror="this.src='./globe.svg'"> 
-</a>
-         <a class="gameframe" href="game.html?game=g4/edgenotfound/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/edgenotfound/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/edgenotfound.png" onerror="this.src='./globe.svg'">
-</a>
-        
+</span>
 
-                  <a class="gameframe" href="game.html?game=g4/hextris/">
+
+                  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/hextris/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/hextris.png" onerror="this.src='./globe.svg'">
-</a>
-         <a class="gameframe" href="game.html?game=g4/sandboxels/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/sandboxels/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/sandboxels.png" onerror="this.src='./globe.svg'">
-</a>
-         <a class="gameframe" href="game.html?game=g4/station-141/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/station-141/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/station-141.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
 
-         <a class="gameframe" href="game.html?game=g4/temple-run-2/">
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/temple-run-2/');">
          <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/temple-run-2.png" onerror="this.src='./globe.svg'">
-</a>
-         <a class="gameframe" href="game.html?game=g4/tunnel-rush/">
+</span>
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/tunnel-rush/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/tunnelrush.png" onerror="this.src='./globe.svg'">
-</a>    
-         <a class="gameframe" href="game.html?game=g4/fnf/">
+</span>    
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/fnf/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fnf.png" onerror="this.src='./globe.svg'">
-</a>    
+</span>    
                          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
      crossorigin="anonymous"></script>
 <!-- gameframe -->
@@ -685,126 +686,126 @@ styleload()
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-         <a class="gameframe" href="game.html?game=g4/stackball/">
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/stackball/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/stackball.png" onerror="this.src='./globe.svg'">
-</a>    
-           <a class="gameframe" href="game.html?game=g4/incredibox/">
+</span>    
+           <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/incredibox/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/incredibox.png" onerror="this.src='./globe.svg'">
-</a>    
-         <a class="gameframe" href="game.html?game=g4/slowroads/">
+</span>    
+         <span class="gameframe" onclick="launchIframe('game.embed.html?game=g4/slowroads/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/slowroads.png" onerror="this.src='./globe.svg'">
-</a>    
-            <a class="gameframe" href="game.html?game=g5/big-tower-tiny-square/">
+</span>    
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/big-tower-tiny-square/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/big-tower-tiny-square.png" onerror="this.src='./globe.svg'">
-</a>
-    <a class="gameframe" href="game.html?game=g5/bobtherobber2/">
+</span>
+    <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/bobtherobber2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/bobtherobber2.jpeg" onerror="this.src='./globe.svg'">
-</a> 
-            <a class="gameframe" href="game.html?game=g5/edge-surf/">
+</span> 
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/edge-surf/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/edge-surf.png" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="game.html?game=g5/greybox/">
+</span>
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/greybox/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/greybox.png" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="game.html?game=g5/madalin-stunt-cars-2/">
+</span>
+            <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/madalin-stunt-cars-2/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/madalin-stunt-cars-2.jpg" onerror="this.src='./globe.svg'">
-</a>
-                      <a class="gameframe" href="game.html?game=g5/madalin-stunt-cars-3/">
+</span>
+                      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/madalin-stunt-cars-3/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/madalin-stunt-cars-3.jpg" onerror="this.src='./globe.svg'">
-</a>
-                      <a class="gameframe" href="game.html?game=g5/monster-tracks/">
+</span>
+                      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/monster-tracks/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/monster-tracks.jpg" onerror="this.src='./globe.svg'">
-</a>
-                      <a class="gameframe" href="game.html?game=g5/n-gon/">
+</span>
+                      <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/n-gon/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/n-gon.png" onerror="this.src='./globe.svg'">
-</a>
-                                  <a class="gameframe" href="game.html?game=g5/noob-steve-parkour/">
+</span>
+                                  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/noob-steve-parkour/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/noob-steve-parkour.jpg" onerror="this.src='./globe.svg'">
-</a>
-                                  <a class="gameframe" href="game.html?game=g5/rocket-league/">
+</span>
+                                  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/rocket-league/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/rocket-league.png" onerror="this.src='./globe.svg'">
-</a>
-                                  <a class="gameframe" href="game.html?game=g5/scrapmetal/">
+</span>
+                                  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/scrapmetal/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/scrapmetal.png" onerror="this.src='./globe.svg'">
-</a>
-                                  <a class="gameframe" href="game.html?game=g5/sort-the-court/">
+</span>
+                                  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/sort-the-court/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/sort-the-court.png" onerror="this.src='./globe.svg'">
-</a>
-                                  <a class="gameframe" href="game.html?game=g5/space-company/">
+</span>
+                                  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/space-company/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/space-company.png" onerror="this.src='./globe.svg'">
-</a>
-                                  <a class="gameframe" href="game.html?game=g5/tanuki-sunset/">
+</span>
+                                  <span class="gameframe" onclick="launchIframe('game.embed.html?game=g5/tanuki-sunset/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/tanuki-sunset.png" onerror="this.src='./globe.svg'">
-</a>
-                                  <a target="_blank" class="gameframe" href="shellshockers.html">
+</span>
+                                  <span class="gameframe" onclick="launchIframe('localgames.html?game=shellshockers.html');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/shellshockers.png" onerror="this.src='./globe.svg'">
-</a>
-            <a target="_blank" class="gameframe" href="yohoho.html">
+</span>
+            <span class="gameframe" onclick="launchIframe('localgames.html?game=yohoho.html');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/yohoho.png" onerror="this.src='./globe.svg'">
-</a>
-            <a class="gameframe" href="flashgame.html?game=fancypantsadventure.swf">
+</span>
+            <span class="gameframe" onclick="launchIframe('flashgame.html?game=fancypantsadventure.swf')">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fancy-pants.png" onerror="this.src='./globe.svg'">
-</a>
-                                              <a class="gameframe" href="game.html?game=g6/10-minutes-till-dawn/">
+</span>
+                                              <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/10-minutes-till-dawn/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/10-minutes-till-dawn.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/amidst-the-clouds/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/amidst-the-clouds/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/amidst-the-clouds.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/blob-opera/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/blob-opera/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/blob-opera.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/cars-simulator/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/cars-simulator/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cars-simulator.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/cell-machine/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/cell-machine/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cell-machine.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/cod-zombies/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/cod-zombies/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cod-zombies.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/craftmine/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/craftmine/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/craftmine.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/crossyroad/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/crossyroad/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/crossyroad.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/cubefield/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/cubefield/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/cubefield.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/deepest-sword/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/deepest-sword/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/deepest-sword.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/doomori/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/doomori/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/doomori.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/dragon-vs-bricks/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/dragon-vs-bricks/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/dragon-vs-bricks.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/earn-to-die/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/earn-to-die/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/earn-to-die.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/fireboywatergirlforesttemple/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/fireboywatergirlforesttemple/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/fireboywatergirlforesttemple.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/kitchen-gun-game/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/kitchen-gun-game/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/kitchen-gun-game.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/soccer-random/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/soccer-random/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/soccer-random.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/superfowlist/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/superfowlist/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/superfowlist.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/volley-random/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/volley-random/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/volley-random.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/wallsmash/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/wallsmash/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/wallsmash.png" onerror="this.src='./globe.svg'">
-</a>
-                                                          <a class="gameframe" href="game.html?game=g6/xx142-b2exe/">
+</span>
+                                                          <span class="gameframe" onclick="launchIframe('game.embed.html?game=g6/xx142-b2exe/');">
   <img class="gameframe" onclick="localStorage.setItem('gameimage', this.src);" src="img/xx142-b2exe.png" onerror="this.src='./globe.svg'">
-</a>
+</span>
   </div>     
 </center>
 <div id="leftFloatAd">
