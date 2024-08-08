@@ -1,6 +1,7 @@
 
 <head>
 <script src="style.js">styleload();</script>
+<script src="js/internalloader.js">styleload();</script>
 <link id="style" rel="stylesheet" href="">
 <style>
   .loadbutton {
@@ -39,5 +40,6 @@ function getUrlParameter(name) {
     const gameImage = localStorage.getItem('gameimage');
     document.getElementById('imageforgame').style.backgroundImage = `url(${gameImage})`;
   });
+
 </script>
-</head><body onload="styleload();"><div onload="styleload();" id="imageforgame"><center><button onclick="window.location.href = 'https://gtst1.github.io/flash/?game=SWF/' + getUrlParameter('game');" class="loadbutton"><h1>Load Game</h1></button></center></div></body>
+</head><body onload="styleload();"><div onload="styleload();" id="imageforgame"><center><button onclick="loadgamebutton('https://gtst1.github.io/flash/?game=SWF/' + getUrlParameter('game'));" class="loadbutton"><h1>Load Game</h1></button></center></div></body>
