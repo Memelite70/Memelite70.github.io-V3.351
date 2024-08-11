@@ -23,13 +23,20 @@ function launchIframe(contentURL) {
     cloakButton.innerText = 'Cloak';
     cloakButton.style.position = 'fixed';
     cloakButton.style.top = '50px';
-    cloakButton.style.left = '10px';
+    cloakButton.style.right = '10px';
     cloakButton.style.zIndex = '1000000';
+        var reloadButton = document.createElement('button');
+    reloadButton.innerText = 'Reload Game';
+    reloadButton.style.position = 'fixed';
+    reloadButton.style.top = '50px';
+    reloadButton.style.left = '10px';
+    reloadButton.style.zIndex = '1000000';
 
 
     document.body.appendChild(closeButton);
     document.body.appendChild(fullscreenButton);
     document.body.appendChild(cloakButton);
+    document.body.appendChild(reloadButton);
 
  
     document.body.appendChild(iframe);
@@ -63,6 +70,13 @@ function launchIframe(contentURL) {
             iframe.style.cursor = 'cell';
             iframe.src = localStorage.getItem('cloakurl');
             win.document.body.appendChild(iframe);
+        }
+    });
+        reloadButton.addEventListener('click', function () {
+        reloadGame();
+        function reloadGame() {
+            var iframe = document.getElementById('iframeforgames');
+            iframe.src = iframe.src;
         }
     });
 }
