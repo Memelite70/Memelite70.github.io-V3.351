@@ -46,6 +46,7 @@ function launchIframe(contentURL) {
         document.body.removeChild(closeButton);
         document.body.removeChild(fullscreenButton);
         document.body.removeChild(cloakButton);
+        document.body.removeChild(reloadButton);
     });
 
 
