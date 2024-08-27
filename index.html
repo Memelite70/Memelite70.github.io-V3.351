@@ -1,6 +1,21 @@
 
 <!DOCTYPE html><head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797604980960415"
-     crossorigin="anonymous"></script></head>
+     crossorigin="anonymous"></script>
+    <script>
+  var update = localStorage.getItem('update1');
+  if (!update) {
+    alert('This latest update adds my version of the Ultraviolet web proxy by TitaniumNetwork, allowing you to search the unblocked web! Find this on the navigation bar, or on the homepage.');
+    var test = prompt('Enter (1) if you wish to see this again (IMPORTANT)');
+    
+    if (test === '1') {
+      
+      return; 
+    }
+    
+    localStorage.setItem('update1', 'true');
+  }
+</script>
+</head>
 <meta name=description content="Geometry Tryhard - Your NEW favorite place for unbl0cked games">
 <meta name=keywords content="games, proxies, not blocked, unbl0kd, latest, skill, fun, entertainment, enjoy, ecstatic, epicool, entertainment, delight, diversion, recreation, pleasure, picnic, activity, distraction, divertissement, festivity, lark, pastime, escape, romp, rollicking, hilarity, game, gayety, revel, merrymaking, frolic, laugh, revelry, spree, riot, jollity, fling, carousing, scream, frolicking, rollick, conviviality, jollification, revelling, gaiety, binge, reveling, time killer, gambol, whoopee" >
     <link id="style" rel="stylesheet" href="">
@@ -40,6 +55,7 @@
     <div class="topbar-navigation">
    <a class="current-page" href="index.html">Home</a>
   <a href="games.html">Games</a>
+  <a onclick="window.open('proxy.html','_blank','width=1600,height=900');">Ultraviolet</a>
 
 
   <a href="mailto: geometry.tryhard.site@gmail.com" target="_blank">Contact Me</a>
@@ -107,6 +123,12 @@ if (!cookies) {
   <div>
         <a href="links.html" class="button">Alternate links!</a>
             </div>
+            <div>
+                  <a class="button" onclick="window.open('proxy.html','_blank','width=1600,height=900');">Ultraviolet</a>
+              </div>    
+              <div>
+                  <a class="button" onclick="window.open('dump/rammerhead/','_blank','width=1600,height=900');">Rammerhead!</a>
+              </div>    
 <div>
                   <a class="button" onclick="window.open('dump/thirtydollar.website/','_blank','width=1600,height=900');">Soundboard</a>
               </div>
@@ -116,9 +138,7 @@ if (!cookies) {
 <div>
                   <a class="button" onclick="window.open('dump/spinningrat.online/','_blank','width=1600,height=900');">spinningrat.online</a>
               </div>
-                        <div>
-                  <a class="button" onclick="window.open('dump/rammerhead/','_blank','width=1600,height=900');">Rammerhead!</a>
-              </div>     
+                         
                         <div>
                   <a href="dump/about-blank/" target="_blank" class="button">about:blank Cloaker!</a>
               </div>
