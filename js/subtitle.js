@@ -11,7 +11,7 @@ var says = [
    "Giggity",
    "Geometry tryhard V3!!",
    "Check out ultraviolet up top",
-   "All Content belongs to its respectful owners.",
+   "<u>All Content belongs to its respectful owners.</u>",
    "Does anyone even scroll all the way down?",
    "<style>.splash-text{ color:cyan;}</style>3kh0 is awesome",
    "Redbull gives you wiings",
