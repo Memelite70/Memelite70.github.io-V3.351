@@ -32,7 +32,7 @@ var says = [
    "uh", 
    "y'all need to look better before requesting a game I already added...", 
    "Primus sucks", 
-   "Miscellaneous Debris", 
+   "<style>.splash-text{ color:cyan;}</style>Sponsored by 3kh0", 
    "the person who made this websites pretty cool i think", 
    "when do I get to go home?", 
    "many hours wasted", 
