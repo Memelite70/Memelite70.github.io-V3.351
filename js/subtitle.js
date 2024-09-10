@@ -5,7 +5,6 @@ var says = [
    "<style>.splash-text{ color:red;}</style>give me your vbux",
    "<style>.splash-text{ color:cyan;}</style>3kh0 reference",
    "Zǎoshang hǎo zhōngguó xiànzài wǒ yǒu BING CHILLING",
-   "Check out ultraviolet up top",
    "*explosion sfx*",
    "Does anyone even scroll all the way down?",
    "<style>.splash-text{ color:cyan;}</style>3kh0 is awesome",
@@ -61,7 +60,9 @@ var says = [
   "<style>.splash-text{ color:yellow;}</style>If you wish to support me, click a ad every now and then. It helps out a ton!",
     "<style>.splash-text{ color:yellow;}</style>If you wish to support me, click a ad every now and then. It helps out a ton!",
     "<style>.splash-text{ color:yellow;}</style>If you wish to support me, click a ad every now and then. It helps out a ton!",
-    "<style>.splash-text{ color:yellow;}</style>If you wish to support me, click a ad every now and then. It helps out a ton!",
+  "<style>.splash-text{ color:yellow;}</style>If you wish to support me, click a ad every now and then. It helps out a ton!",
+  "<style>.splash-text{ color:yellow;}</style>If you wish to support me, click a ad every now and then. It helps out a ton!",
+  "<style>.splash-text{ color:yellow;}</style>If you wish to support me, click a ad every now and then. It helps out a ton!",
   "Noot Noot",
   "<a href='https://github.com/Memelite70/Memelite70.github.io' target='_blank'>Official Github Repository</a>",
   "shimmy shimmy ay shimmy ahh shimmy ahh",
@@ -77,7 +78,7 @@ var says = [
   "Do your homework kids",
   "Will the real slim shady please stand up?",
   "We're going to have a problem here",
-  "<style>.splash-text i{ color:yellow;}</style>I'm not in danger, Skyler. <i>I</i> am the danger",
+  "<style>.splash-text i{ color:yellow;}</style>I'm not in danger, Skyler. <i>I am</i> the danger",
   "My cats breath smells like cat food",
   "I'm the one who knocks",
   "YOU'RE CRINGE!",
@@ -87,7 +88,7 @@ var says = [
   "COOKIES FOR YOU!!!",
   "This is a splash text",
   "Now with even more bugs!",
-  "Check out AI in the sky!",
+
  ];
 var games = [
   "Moto X3M",
