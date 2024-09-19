@@ -102,7 +102,7 @@ if (!cookies) {
             iframe.style.margin = '0';
             iframe.src = "https://" + window.location.hostname;
             win.document.body.appendChild(iframe);
-          close(window.top);
+          close(window.top.location.href);
         }
         </script>
   <div>
